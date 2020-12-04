@@ -23,6 +23,20 @@ real_input = [1150,1579,1361,1319,1201,1253,1806,1783,1164,1772,1920,1428,1918,
               1671,1955,1863,1202,1356,1842,2010,1288,1067,1576,1295,1760,1888,
               1639,1282,1633,1619]
 
+#simple answer
+for i in real_input:
+  for j in real_input:
+    if j == 2020-i:
+      print(j,i,i*j)
+
+for i in real_input:
+  for j in real_input:
+    for k in real_input:
+      if k == 2020-i-j:
+        print(i,j,k, i*j*k)
+        
+#answer after my rabbit hole
+
 def elf_expense1(go):
   inp = np.array(go)  
   addends = []
